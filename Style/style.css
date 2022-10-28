@@ -1,0 +1,31 @@
+*,
+*::after
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(10, 150px);
+    grid-template-rows: repeat(8, 80px);
+    grid-gap:3px ;
+     background-image: url(https://i.postimg.cc/9XgRGqfZ/1105206-illustration-digital-art-minimalism-grass-green-yellow-simple-triangle-pattern-texture-circl.png);
+     background-size: cover;
+     background-attachment:fixed;
+}
+header img{
+    width: 4rem;
+}
+.menu-list{
+    text-align: center;
+    list-style: none;
+}
+.menu-list a{
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+.menu-list a:hover{
+    color: rgb(7, 167, 7);
+}
