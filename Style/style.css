@@ -6,13 +6,11 @@
     box-sizing: border-box;
 }
 body{
-    display: grid;
-    grid-template-columns: repeat(10, 150px);
-    grid-template-rows: repeat(8, 80px);
-    grid-gap:3px ;
      background-image: url(https://i.postimg.cc/9XgRGqfZ/1105206-illustration-digital-art-minimalism-grass-green-yellow-simple-triangle-pattern-texture-circl.png);
      background-size: cover;
      background-attachment:fixed;
+     height: 100vh;
+     width: 100vw;
 }
 header img{
     width: 4rem;
@@ -28,4 +26,110 @@ header img{
 }
 .menu-list a:hover{
     color: rgb(7, 167, 7);
+}
+.content{
+    max-height: 100vh;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(10, 150px);
+    grid-template-rows: repeat(4, 150px);
+    grid-auto-rows:150px ;
+    grid-gap:3px ;
+}
+.container-1{
+    background-image: url(https://i.postimg.cc/CLHGmdSC/FD2-EB3-AE-716-F-4-E8-D-8-CAB-4-C9319-B36764.jpg);
+grid-column-start: 7;
+grid-column-end: 10;
+grid-row-start: 2;
+grid-row-end: 5;
+background-size: cover;
+border-radius: 50%;
+border-style: groove;
+border-width: 20px;
+border-color: rgb(13, 96, 14);
+}
+.container-2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    top: 100px;
+}
+.container-3{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.container-4{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    position: relative;
+    bottom: 80px;
+    color: rgb(7, 49, 4);
+}
+.container-5{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    position: relative;
+    right: 30px;
+}
+.container-5 a{
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+.btn{
+    background-color: rgb(11, 41, 6);
+}
+footer{
+   text-align: center;
+   border-style: double;
+   box-sizing: border-box;
+   border-radius: 10px;
+   border-width: 4px;
+   border-color: rgb(11, 59, 6);
+   position: relative;
+   top: 60px;
+   color: rgb(0, 0, 0);
+   width: 100%;
+}
+h1{
+    color: black;
+}
+/* About */
+.container-6{
+    background-image: url(https://i.postimg.cc/wMb6CVwN/FC361385-A476-4456-8788-1-E86-AF8-BB45-E.jpg);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-size: cover;
+    border-radius: 10px;
+    border-style:solid ;
+    border-color: rgba(0, 0, 0, 0.82);
+    }
+.container-7{
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-color: rgba(0, 0, 0, 0.692);
+    text-align:center;
+    border-radius:10px ;
+    color: azure;
+}
+.bout{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 150px;
+}
+h3{
+    position: relative;
+    top: 50px;
 }
