@@ -115,6 +115,7 @@ h1{
     border-radius: 10px;
     border-style:solid ;
     border-color: rgba(0, 0, 0, 0.82);
+    animation: fadein 2s;
     }
 .container-7{
     grid-column-start: 4;
@@ -125,6 +126,10 @@ h1{
     text-align:center;
     border-radius:10px ;
     color: azure;
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 .bout{
@@ -153,6 +158,57 @@ h3{
     grid-row-end: 5;
     background-color: rgba(0, 0, 0, 0.63);
     border-radius: 10px;
+}
+/* Skills */
+.container-12{
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 5;    
+}
+.container-11{
+    background-image: url(https://i.postimg.cc/DzrmP9Fm/FD2-EB3-AE-716-F-4-E8-D-8-CAB-4-C9319-B36764.jpg);
+    background-size: cover;
+    border-style: solid;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+h2{
+    text-align: center;
+    position: relative; 
+    top: 100px;   
+}
+/* contact */
+.container-13{
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.cont{
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.container-14{
+    background-image: url(https://i.postimg.cc/CLHGmdSC/FD2-EB3-AE-716-F-4-E8-D-8-CAB-4-C9319-B36764.jpg);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-size: cover;
+    border-style: solid;
+}
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,200&family=Roboto:ital,wght@0,300;0,400;1,100;1,500&display=swap');
