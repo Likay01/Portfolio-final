@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,200&family=Roboto:ital,wght@0,300;0,400;1,100;1,500&display=swap');
 *,
 *::after
 *::before{
@@ -5,14 +6,37 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.flex-container{
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    top: 50%;
+    margin-top: 200px;
+    
+    
+}
+.flex-container button {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+.text-content {
+    margin-top: 5px;
+}
 body{
-     background-image: url(https://i.postimg.cc/9XgRGqfZ/1105206-illustration-digital-art-minimalism-grass-green-yellow-simple-triangle-pattern-texture-circl.png);
-     background-size: cover;
-     background-attachment:fixed;
-     height: 100vh;
-     width: 100vw;
-     font-family: 'Roboto', sans-serif;
+    background-image: url(https://i.postimg.cc/9XgRGqfZ/1105206-illustration-digital-art-minimalism-grass-green-yellow-simple-triangle-pattern-texture-circl.png);
+    background-size: cover;
+    background-attachment:fixed;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    
+   
 }
 header img{
     width: 4rem;
@@ -32,24 +56,15 @@ header img{
 .content{
     max-height: 100vh;
 }
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(10, 150px);
-    grid-template-rows: repeat(4, 150px);
-    grid-auto-rows:150px ;
-    grid-gap:3px ;
-}
 .container-1{
-    background-image: url(https://i.postimg.cc/CLHGmdSC/FD2-EB3-AE-716-F-4-E8-D-8-CAB-4-C9319-B36764.jpg);
-grid-column-start: 7;
-grid-column-end: 10;
-grid-row-start: 2;
-grid-row-end: 5;
-background-size: cover;
-border-radius: 50%;
-border-style: groove;
-border-width: 20px;
-border-color: rgb(13, 96, 14);
+    
+    margin: 150px 0;
+    height: 50%;
+    width: 55%;
+    border-radius: 50%;
+    border-style: groove;
+    border-width: 20px;
+    border-color: rgb(13, 96, 14);
 }
 .container-2{
     grid-column-start: 3;
@@ -72,7 +87,6 @@ border-color: rgb(13, 96, 14);
     grid-row-end: 5;
     position: relative;
     bottom: 80px;
-    color: rgb(7, 49, 4);
 }
 .container-5{
     grid-column-start: 4;
@@ -82,98 +96,106 @@ border-color: rgb(13, 96, 14);
     position: relative;
     right: 30px;
 }
-.container-5 a{
-text-decoration: none;
-color: rgb(255, 255, 255);
+.btn a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 .btn{
     background-color: rgb(11, 41, 6);
+    position: relative;
+    top: 20px;
 }
 footer{
-   text-align: center;
-   border-style: double;
-   box-sizing: border-box;
-   border-radius: 10px;
-   border-width: 4px;
-   border-color: rgb(11, 59, 6);
-   position: relative;
-   top: 60px;
-   color: rgb(0, 0, 0);
-   width: 100%;
+    text-align: center;
+    border-style: double;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: rgb(11, 59, 6);
+    position: relative;
+    color: rgb(0, 0, 0);
+    /* bottom:250px ; */
 }
 h1{
     color: black;
 }
+.web{
+    color: rgb(7, 49, 4); 
+}
 /* About */
-.container-6{
-    background-image: url(https://i.postimg.cc/wMb6CVwN/FC361385-A476-4456-8788-1-E86-AF8-BB45-E.jpg);
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    background-size: cover;
+.photo{
+width: 300px;
     border-radius: 10px;
     border-style:solid ;
     border-color: rgba(0, 0, 0, 0.82);
-    animation: fadein 2s;
-    }
-.container-7{
-    grid-column-start: 4;
-    grid-column-end: 10;
+    animation: fade 2s;
+    position: relative;
+}
+.container-6{
+    background-image: url();
+    /* grid-column-start: 2;
+    grid-column-end: 4;
     grid-row-start: 2;
-    grid-row-end: 5;
+    grid-row-end: 5; */
+}
+.container-7{
+    margin: 0 auto;
+    padding-left:10px;
     background-color: rgba(0, 0, 0, 0.692);
     text-align:center;
     border-radius:10px ;
     color: azure;
     opacity: 0;
-    animation: fadein 2s;
+    animation: fade 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+  
+    
 }
-
-.bout{
+.spacing{
+    padding-right: 10px;
+    width: 545px;
+    padding-bottom: 20px;
+}
+.about{
+   flex-direction: column;
+   margin-top: 12rem;
+  padding-bottom: 57px;
+}
+.about-me{
     color: rgb(255, 255, 255);
     position: relative;
     top: 150px;
 }
-h3{
-    position: relative;
-    top: 50px;
-}
 /* education */
-.container-8{
-    background-image: url(https://i.postimg.cc/mDCSNkt9/4-A7712-DE-B372-46-C2-8898-464094-A8-FFBC.jpg);
-    background-size: cover;
-    border-radius: 10px;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 5;
+.edu-pic{
+   width: 25rem;
+   border-radius: 10px;
 }
 .container-9{
-    grid-column-start: 6;
-    grid-column-end: 10;
-    grid-row-start: 2;
-    grid-row-end: 5;
     background-color: rgba(0, 0, 0, 0.63);
     border-radius: 10px;
+    width: 100%;
+}
+.separate{
+    flex-direction: column;
+    margin-top: 10rem;
+   padding-bottom: 50px;
+}
+.collect{
+    padding-right:10px ;
+}
+.text-in{
+    width: 100%;
 }
 /* Skills */
 .container-12{
-    grid-column-start: 2;
-    grid-column-end: 10;
-    grid-row-start: 4;
-    grid-row-end: 5;    
+margin-bottom: 3rem;
 }
-.container-11{
-    background-image: url(https://i.postimg.cc/DzrmP9Fm/FD2-EB3-AE-716-F-4-E8-D-8-CAB-4-C9319-B36764.jpg);
-    background-size: cover;
+.end-pic{
     border-style: solid;
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    width: 25rem;
+   margin-top: 7rem;
 }
 h2{
     text-align: center;
@@ -182,27 +204,24 @@ h2{
 }
 /* contact */
 .container-13{
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 3;
-    grid-row-end: 5;
+    padding-bottom: 30px;
 }
 .cont{
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    margin-top:5rem ;
+}
+.sec{
+    
+}
+form{
+    margin-top: 10rem;
+    padding-left: 5rem;
 }
 .container-14{
-    background-image: url(https://i.postimg.cc/CLHGmdSC/FD2-EB3-AE-716-F-4-E8-D-8-CAB-4-C9319-B36764.jpg);
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    background-size: cover;
-    border-style: solid;
+margin-top:6rem;
+    width: 35rem;
+ border-style: solid;
 }
-@keyframes fadein {
+@keyframes fade {
     from{
         opacity: 0;
     }
@@ -210,5 +229,54 @@ h2{
         opacity: 1;
     }
 }
+/* Media Queries */
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,200&family=Roboto:ital,wght@0,300;0,400;1,100;1,500&display=swap');
+
+@media only screen and (max-width: 720px){
+.out-lay{
+    flex-direction: column;
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+    margin-right: 200px;
+    align-items: center;
+}
+.container-1{
+    position: relative;
+    bottom: 300px;
+    width: 100%;
+}
+footer{
+    position: relative;
+    /* top: 50%; */
+}
+
+.container-7{
+    flex-direction: column;
+    display: inline-flex;
+}
+.spacing{
+    width: 100%;
+}
+.edu-pic{
+    width: 100%;
+}
+.end-pic{
+    width: 100%;
+}
+
+}
+@media only screen and (max-width:1000px){
+    main form {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .container-14{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .photo{
+        width:100%;
+    }
+}
