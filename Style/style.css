@@ -156,7 +156,6 @@ width: 300px;
 }
 .container-7{
     margin: 0 auto;
-    padding-left:10px;
     background-color: rgba(0, 0, 0, 0.692);
     text-align:center;
     border-radius:10px ;
@@ -173,7 +172,13 @@ width: 300px;
 }
 .wording{
     padding-top: 7rem;
+   
 }
+
+.wording p{
+    margin: auto;
+}
+
 .about{
    flex-direction: column;
 
@@ -213,6 +218,7 @@ margin-bottom: 3rem;
     border-style: solid;
     width: 25rem;
    margin-top: 7rem;
+   
 }
 h2{
     text-align: center;
@@ -225,13 +231,8 @@ padding: 10px;
 padding-top: 8rem;
 padding-bottom: 2rem;
 width: 100vw;
-justify-content: center;
 }
-.card{
 
-    
-    background-color: rgba(240, 255, 255, 0.526);
-}
 .tie{
     margin-bottom: 2rem;
     align-items: center;
@@ -242,6 +243,16 @@ justify-content: center;
     padding-bottom: 1rem;
 }
 /* contact */
+.icon a{
+    color: black;
+}
+.icons{
+   display:inline;
+}
+.personal{
+    background-color: rgba(240, 248, 255, 0.441);
+    border-radius: 10px;
+}
 .container-13{
     padding-bottom: 30px;
 }
@@ -298,12 +309,13 @@ main{
     flex-direction: column;
     width: 100%; 
     display: inline-flex;
+    margin: auto;
 }
 .card{
     margin-top: 2rem;
 }
 footer{
-    position: fixed;
+    position: static;
  
 }
 .container-7{
